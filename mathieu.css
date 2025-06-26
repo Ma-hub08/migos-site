@@ -1,0 +1,125 @@
+  /* <!-- CSS intégré --> */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #242323;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    img {
+      height: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(2);
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #222;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #242323;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      img {
+        height: 200px;
+      }
+
+      section {
+        margin: 10px;
+      }
+
+      form {
+        width: 100%;
+      }
+    }
