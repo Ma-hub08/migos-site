@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires pour le T-shirt</title>
+    <link rel="stylesheet" href="mathieu.css">
+    <link rel="shortcut icon" href="./Shortcut icon.png">
+  </head>
+  <body>
+    <header>
+      <h2>Les Formulaires</h2>
+      <p>Remplissez le formulaire, On s'occupe du reste <br> Contacter nous via le formulaire <br>
+        <strong> MIGOS form-Votre style, votre choix</strong>
+      </p>
+    </header>
+    
+    <main>
+      <section>
+        <button>
+          <a href="commande.html">Retour</a>
+        </button>
+      </section>
+      
+      <section>
+        <center>
+          <h3><strong>Moyen de Paiment</strong></h3>
+          <p>Pour régler votre commande, veuillez envoyer le montant au numéro suivant :<strong>+261 38 42 783 56</strong> (au nom de Diary)Ensuite, n'oubliez pas d’envoyer une capture d’écran du paiement en message privé à <a href="https://www.facebook.com/Maaathiiieeeuuu" target="_blank">Mathieu RAZANAKOLONA</a> afin de confirmer votre achat.<br><strong>📩 Un e-mail de confirmation vous sera également envoyé après votre commande.</strong></p>
+        </center>
+      </section>
+
+
+      <section id="form">
+
+        <form action="https://formsubmit.co/migos4891@gmail.com" method="post">
+          <label for="email">Votre email</label>
+          <input type="email"name="email" id="email" placeholder="Votre email">
+          
+          <label for="phon number">Numero de telephone</label>
+          <input type="tel" name="tel" placeholder="+261 38 ** *** **">
+          
+          <label for="name">Nom sur facebook</label>
+          <input name="Facebook's_name" id="text" placeholder="Entrez votre nom sur Facebook" /> 
+          
+          <label for="Âge">Âge</label>
+          <input name="Âge" id="Âge" placeholder="Votre Âge..." type="number">
+          
+          <label for="gender">Genre</label>
+          <select name="gender" id="gender" type="gender" required>
+            <option value="N/A">N/A</option>
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+          </select>
+          
+          <label for="Taille">Taille</label>
+          <select type="Taille" id="Taille" name="Taille" required>
+            <option value="N/A">N/A</option>
+            <option value="XXL">XXL</option>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+          
+          <label for="Type de vêtement commandé">Type de vêtement commandé</label>
+          <select id="Type de vetement commandé" name="Type de vêtement commandé" required>
+            <option value="N/A">N/A</option>
+            <!-- <option value="Sweat shirt (SS)">Sweat shirt (SS) </option> -->
+            <option value="Tee-shirt Niveau 1">Tee-shirt Niveau 1 </option>
+            <option value="Tee-shirt Niveau 2">Tee-shirt Niveau 2 </option>
+            <!-- <option value="Ensembles (sweat shirt et jogging) (ES&J)">Ensembles(sweat shirt et jogging) (ES&J) </option><option value="Ensembles (Tee-shirt et Short) (ET&S)">Ensembles (Tee-shirt et Short) (ET&S)</option><option value="Crop top (CT)">crop top (CT) </option><option value="Short (S)">Short (S) </option><option value="Jogging (J)">Jogging (J) </option> -->
+          </select>
+          
+          <label for="Montant">Montant</label>
+          <select id="Montant" name="Montant" required>
+            <option value="N/A">N/A</option>
+            <option value="35.000ar (Classic) (N1)">35.000ar (Classic) (N1) </option>
+            <option value="45.000ar (Premium) (N1)">45.000ar (Premium) (N1) </option>
+            <!-- <option value="95.000ar (SS)">95.000ar (SS) </option> -->
+          </select>
+          
+          <label for="Nombre de commande">Nombre de commande</label>
+          <input type="number" id="Nombre de commande" name="Nombre de commande" required/>
+          
+          <label for="couleur">Couleur</label>
+          <select name="couleur" id="couleur" required>
+            <option value="N/A">N/A</option>
+            <option value="Blanc">Blanc</option>
+            <option value="Noir">Noir</option>
+          </select>
+          
+          <label for="Provinces">Provinces</label>
+          <select id="Provinces" name="Provinces" required>
+            <option value="N/A">N/A</option>
+            <option value="Antananarivo">Antananarivo</option>
+            <option value="Fianarantsoa">Fianarantsoa</option>
+            <option value="Mahajanga">Mahajanga</option>
+            <option value="Toamasina">Toamasina</option>
+            <option value="Toliara">Toliara</option>
+            <option value="Diego">Diego</option>
+          </select>
+          
+          <center>
+            <p><strong>"Si vous commandez plus de deux articles, veuillez préciser les couleurs dans le récapitulatif en bas de page (ex. : '1 Blanc', '2 Noir')."</p></strong>
+            <strong>"Assurez-vous que votre commande est correcte avant de valider le formulaire."</strong>
+          </center>
+          
+          <h3><strong>Récapitulatif de votre commande </strong></h3>
+          <em>"Merci de faire un petit récapitulatif avant de confirmer votre commande."</em>
+          <input type="text" name="Récapitulatif de votre commande" id="Récapitulatif de votre commande" cols="20" rows="5" placeholder="Votre récapitulatif de commande...">
+          <input type="checkbox" id="cgv" />
+          
+          <label for="cgv">Accepter les conditions générales</label>
+          
+          <input type="hidden" name="_next" value="https://ma-hub08.github.io/migos-site/merci.html">
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit">Envoyer la commande</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact" style="text-align: center; padding: 15px 0; background-color: #222; color: #fff;font-weight:bold; font-size: 14px;">
+    <h4> ® Migos 2025 </h4>
+    <a href="mailto:matthewrazanakolona@gmail.com">matthewrazanakolona@gmail.com</a>
+    <br>
+    <a href="https://www.facebook.com/Maaathiiieeeuuu" target="_blank">Mathieu RAZANAKOLONA</a>
+    <br>
+    <a href="./notice.txt" download="NOTICE">NOTICE : Merci de télécharger et de lire.</a>
+   </footer>
+  </body>
+</html>
