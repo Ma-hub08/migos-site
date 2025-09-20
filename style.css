@@ -1,89 +1,97 @@
-/* --- DEADPOOL THEME (NOIR & BLANC) --- */
+/* --- THEME PRO --- */
 body {
-  font-family: 'Bangers', Arial, sans-serif;
-  background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
-  color: #f5f5f5;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #E2F3F4;
+  color: #333;
   margin: 0;
   padding: 0;
-  font-size: 14px; /* police générale réduite */
+  font-size: 14px;
+  line-height: 1.6;
 }
 
+/* --- HEADER --- */
 header {
-  background: linear-gradient(90deg, #000, #333);
+  background: #6DC7D1;
   color: #fff;
   padding: 20px 0;
   text-align: center;
-  font-size: 20px; /* réduit */
+  font-size: 22px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  border-bottom: 3px solid #000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border-bottom: 3px solid #4da7b0;
 }
 
+/* --- TITRES --- */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 10px 0;
-  color: #fff;
-  font-size: 18px; /* réduit */
-  text-shadow: 1px 1px 0 #000, 0 0 6px rgba(255, 255, 255, 0.6);
+  color: #222;
+  font-size: 20px;
 }
 
+/* --- TEXTE --- */
 p {
   text-align: center;
-  color: #ccc;
-  font-size: 13px; /* réduit */
+  color: #555;
+  font-size: 14px;
 }
 
+/* --- SECTIONS --- */
 section {
-  padding: 15px;
-  margin: 15px auto;
-  max-width: 900px;
-  background: #111;
-  border-radius: 8px;
-  border: 2px solid #333;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 950px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #d6e9ea;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+/* --- LISTES --- */
 ol {
   padding-left: 20px;
-  color: #fff;
-  font-size: 13px;
+  color: #333;
+  font-size: 14px;
 }
 
+/* --- IMAGES --- */
 img {
-  height: 220px;
-  margin: 8px;
-  border-radius: 6px;
-  border: 2px solid #fff;
+  height: 230px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #6DC7D1;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 10px #000, 0 0 15px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 img:hover {
-  transform: scale(1.05) rotate(-3deg);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.9), 0 0 40px #000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
 }
 
+/* --- VIDEOS --- */
 video {
   display: block;
-  margin: 15px auto;
+  margin: 20px auto;
   border-radius: 8px;
-  border: 2px solid #fff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  border: 2px solid #6DC7D1;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
+/* --- FORMULAIRES --- */
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 450px;
+  gap: 12px;
+  max-width: 500px;
   margin: auto;
 }
 
 label {
   font-weight: bold;
-  color: #fff;
+  color: #333;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -92,12 +100,12 @@ input[type="text"],
 input[type="number"],
 select,
 textarea {
-  padding: 8px;
-  border: 2px solid #fff;
-  background: #0d0d0d;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 13px;
+  padding: 10px;
+  border: 1px solid #6DC7D1;
+  background: #fff;
+  color: #333;
+  border-radius: 6px;
+  font-size: 14px;
   outline: none;
 }
 
@@ -105,46 +113,46 @@ textarea {
   resize: vertical;
 }
 
-/* --- BOUTONS NOIR & BLANC --- */
+/* --- BOUTONS VISIBLES --- */
 input[type="submit"],
 button,
 .btn {
-  background: linear-gradient(90deg, #000, #333);
-  color: #fff;
-  padding: 10px 16px;
-  border: 2px solid #000;
-  border-radius: 5px;
+  background: #E74C3C; /* rouge vif */
+  color: #fff; /* texte blanc pour contraste */
+  padding: 12px 18px;
+  border: 2px solid #C0392B; /* contour rouge foncé */
+  border-radius: 6px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 2px 2px 0 #000, 0 0 12px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* ombre plus marquée */
 }
 
 input[type="submit"]:hover,
 button:hover,
 .btn:hover {
-  background: linear-gradient(90deg, #333, #000);
+  background: #C0392B; /* rouge plus foncé au hover */
   color: #fff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px #000;
-  transform: scale(1.05) rotate(-2deg);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
 /* --- LIENS --- */
 a {
-  color: #fff;
+  color: #6DC7D1;
   text-decoration: none;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 a:hover {
   color: #000;
-  background: #fff;
-  padding: 2px 5px;
-  border-radius: 3px;
+  background: #6DC7D1;
+  padding: 3px 6px;
+  border-radius: 4px;
   transition: 0.2s;
 }
 
@@ -152,23 +160,25 @@ a:hover {
 footer {
   text-align: center;
   padding: 15px;
-  background: #000;
-  margin-top: 30px;
-  color: #fff;
+  background: #6DC7D1;
+  margin-top: 40px;
+  color: #000; /* texte noir dans le footer */
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
-  border-top: 3px solid #333;
-  box-shadow: 0 -4px 15px rgba(255, 255, 255, 0.6);
+  border-top: 3px solid #4da7b0;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.15);
 }
 
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
   img {
-    height: 150px;
+    height: 160px;
   }
 
   section {
-    margin: 8px;
+    margin: 10px;
+    padding: 15px;
   }
 
   form {
